@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison Lumen — Studio de conseil</title>
+  <meta name="description" content="Maison Lumen accompagne les entreprises dans leur stratégie, leur design et leur transformation numérique.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">Maison<span>Lumen</span></a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#apropos">À propos</a>
+        <a href="#temoignages">Références</a>
+        <a href="#contact" class="btn btn--small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="eyebrow">Studio de conseil · Lyon</p>
+        <h1>Des idées claires pour des projets qui avancent.</h1>
+        <p class="hero__lead">Nous aidons les entreprises à clarifier leur stratégie, concevoir leurs services et réussir leur transformation numérique.</p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn">Parlons de votre projet</a>
+          <a href="#services" class="btn btn--ghost">Nos services</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <p class="eyebrow">Ce que nous faisons</p>
+        <h2>Nos services</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card__num">01</div>
+            <h3>Stratégie</h3>
+            <p>Diagnostic, feuille de route et priorisation pour aligner vos équipes sur des objectifs concrets.</p>
+          </article>
+          <article class="card">
+            <div class="card__num">02</div>
+            <h3>Design de services</h3>
+            <p>Ateliers, parcours utilisateurs et prototypes pour imaginer des services simples et utiles.</p>
+          </article>
+          <article class="card">
+            <div class="card__num">03</div>
+            <h3>Numérique</h3>
+            <p>Sites, applications et outils internes conçus et développés pour durer.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="apropos" class="section section--alt">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">À propos</p>
+          <h2>Une équipe à taille humaine</h2>
+          <p>Fondée en 2015, Maison Lumen réunit consultants, designers et développeurs autour d'une conviction : un bon projet commence par une bonne compréhension des besoins.</p>
+          <p>Nous travaillons en proximité avec nos clients, de la première idée jusqu'à la mise en service.</p>
+        </div>
+        <ul class="stats">
+          <li><strong>10</strong><span>ans d'expérience</span></li>
+          <li><strong>120+</strong><span>projets livrés</span></li>
+          <li><strong>25</strong><span>experts</span></li>
+          <li><strong>96 %</strong><span>clients satisfaits</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="temoignages" class="section">
+      <div class="container">
+        <p class="eyebrow">Ils nous font confiance</p>
+        <h2>Références</h2>
+        <div class="quotes">
+          <blockquote>
+            <p>« Une équipe à l'écoute, qui a su transformer nos idées floues en un plan d'action précis. »</p>
+            <cite>Directrice générale, PME industrielle (exemple)</cite>
+          </blockquote>
+          <blockquote>
+            <p>« Méthode claire, livrables soignés et délais tenus. Nous recommandons. »</p>
+            <cite>Responsable marketing, réseau d'agences (exemple)</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--dark">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Un projet en tête ?</h2>
+          <p>Écrivez-nous, nous vous répondons sous 48 heures.</p>
+          <p class="contact-info">
+            12 rue de l'Exemple, 69000 Lyon<br>
+            contact@exemple.fr · 04 00 00 00 00
+          </p>
+        </div>
+        <form class="form" onsubmit="event.preventDefault(); this.querySelector('.form__msg').hidden = false; this.reset();">
+          <label>Nom<input type="text" name="nom" required></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Message<textarea name="message" rows="4" required></textarea></label>
+          <button type="submit" class="btn">Envoyer</button>
+          <p class="form__msg" hidden>Merci ! Votre message a bien été pris en compte.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Maison Lumen</span>
+      <a href="#">Mentions légales</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
