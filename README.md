@@ -1,28 +1,19 @@
-# TestIA — Site vitrine
+# Cécile D'Amico — CV en ligne
 
-Site vitrine statique et basique (HTML, CSS, JavaScript), sans dépendance ni build.
+Site vitrine statique (HTML, CSS, JavaScript), sans dépendance ni build, qui présente le profil, les expertises, le parcours et les certifications de Cécile D'Amico.
+
+En ligne via GitHub Pages : https://cecdamico.github.io/TestIA/
 
 ## Structure
 
-- `index.html` : page unique (accueil, services, à propos, références, contact)
+- `index.html` : page unique (profil, expertises, parcours, égalité & inclusion, certifications, contact)
 - `style.css` : styles, responsive
 - `script.js` : menu mobile et année du footer
 
 ## Lancer en local
 
-Ouvrir `index.html` dans un navigateur, ou :
-
 ```bash
 python3 -m http.server 8000
 ```
 
-puis aller sur http://localhost:8000.
-
-## Mise en ligne
-
-Compatible GitHub Pages : Settings → Pages → Branch `main` / dossier racine.
-
-## À personnaliser
-
-Le nom « Maison Lumen », les textes, l'adresse, l'email et les références sont des contenus d'exemple à remplacer.
-Le formulaire de contact n'envoie rien : il faut le brancher à un service (Formspree, Netlify Forms, backend…).
+puis ouvrir http://localhost:8000.
